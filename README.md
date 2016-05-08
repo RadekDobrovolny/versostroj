@@ -1,5 +1,6 @@
 # Veršostroj
 
-For information in Czech see [README-CZ.md](https://github.com/RadekDobrovolny/versostroj/blob/master/README-CZ.md)
+_For information in Czech see [README-CZ.md](https://github.com/RadekDobrovolny/versostroj/blob/master/README-CZ.md)_
 
-All the materials and documents to create your own Veršostroj.
+##This branch is about Veršostroj placed in Faculty of Arts, Masaryk University.
+
