@@ -31,8 +31,9 @@ while True:
 		while pygame.mixer.music.get_busy() == True:
 			continue
 		time.sleep(0.2)
-		print("Finished. Ready for next poem.")
 
-		timenow = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+		timeNow = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 		with open("./log.txt", "a") as logfile:
-			logfile.write(timenow + " " + poemsList[n - 1] + "\n")
+			logfile.write(timeNow + " " + poemsList[n - 1] + "\n")
+
+		print("Finished. Ready for next poem.")		
