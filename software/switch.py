@@ -35,4 +35,4 @@ while True:
 
 		timenow = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 		with open("./log.txt", "a") as logfile:
-			logfile.write(timenow + " " poemsList[n - 1] + "\n")
+			logfile.write(timenow + " " + poemsList[n - 1] + "\n")
