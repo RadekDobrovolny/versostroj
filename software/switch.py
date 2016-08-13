@@ -45,7 +45,7 @@ while True:
 		player.set_media(media)
 		player.play()			
                                 
-        audio = MP3(poemsList[n - 1])                		
+        	audio = MP3(poemsList[n - 1])                		
 		time.sleep(audio.info.length)		
 
 		#logging to log.txt file
