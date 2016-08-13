@@ -8,7 +8,7 @@ import mutagen
 import vlc
 
 #mutagen library is used for reading mp3 file length
-#(if someone know how to do it with vlc library please let me know)
+#(if someone knows how to do it with vlc library please let me know)
 from mutagen.mp3 import MP3
 from mutagen.mp3 import MPEGInfo
 
