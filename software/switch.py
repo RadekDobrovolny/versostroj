@@ -5,10 +5,12 @@ import random
 import glob
 import datetime
 
+# Button is connected to GPIO pin 18
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-DIR = "./Poems/*.mp3"
+# Directory where mp3 files are stored (on flash drive)
+DIR = "/media/pi/KINGSTON/Versostroj/*.mp3"
 
 pygame.mixer.init()
 
@@ -32,8 +34,9 @@ while True:
 			continue
 		time.sleep(0.2)
 
+		#logging to log.txt file
 		timeNow = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-		with open("./log.txt", "a") as logfile:
+		with open("/media/pi/KINGSTON/Log/log.txt", "a") as logfile:
 			logfile.write(timeNow + " " + poemsList[n - 1] + "\n")
 
 		print("Finished. Ready for next poem.")
