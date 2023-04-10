@@ -37,7 +37,7 @@ GPIO.setup(VER5,GPIO.OUT)
 GPIO.setup(VER6,GPIO.OUT)
 
 # init message
-print "LED on"
+print("LED on")
 
 # Let there be light!
 while True:    
