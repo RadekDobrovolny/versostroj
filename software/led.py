@@ -1,5 +1,5 @@
-#Code for operation matrix LED display. It is 3 x 7 LEDs.
-#3 rows and 7 columns.
+# Code for operation matrix LED display. It is 3 x 7 LEDs.
+# 3 rows and 7 columns.
 
 import RPi.GPIO as GPIO
 import time
@@ -21,7 +21,7 @@ VER4 = 21
 VER5 = 17
 VER6 = 4
 
-#setup
+# setup
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(HOR0,GPIO.OUT)
@@ -36,10 +36,10 @@ GPIO.setup(VER4,GPIO.OUT)
 GPIO.setup(VER5,GPIO.OUT)
 GPIO.setup(VER6,GPIO.OUT)
 
-#init message
+# init message
 print "LED on"
 
-#Let there be light!
+# Let there be light!
 while True:    
     GPIO.output(HOR0, GPIO.HIGH)
     GPIO.output(HOR1, GPIO.HIGH)
